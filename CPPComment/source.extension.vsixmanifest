@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="CPPComment.0b428564-17f9-4b85-a41f-2076a1197049" Version="1.0" Language="en-US" Publisher="Eldin Zenderink" />
+        <DisplayName>CPPComment</DisplayName>
+        <Description xml:space="preserve">C/C++ Comment Generator 
+
+(used for functions)
+
+- Parses functions by the following rule:
+
+- Check if functions is a constructor
+- Check if function is part of a Class
+- Parse Class Name
+- Parse all parameters
+- Parse all parameter typs
+- Parse return type of function
+
+
+
+</Description>
+        <MoreInfo>https://github.com/EldinZenderink/CPPComment</MoreInfo>
+        <License>LICENSE.rtf</License>
+        <GettingStartedGuide>https://github.com/EldinZenderink/CPPComment</GettingStartedGuide>
+        <ReleaseNotes>First Release</ReleaseNotes>
+        <Icon>Logo.png</Icon>
+        <Tags>CPP C Plus Plus C++ C Comment Generator</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0]" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,16.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+    </Assets>
+</PackageManifest>
